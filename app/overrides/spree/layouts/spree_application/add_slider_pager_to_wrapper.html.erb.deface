@@ -1,8 +1,8 @@
 <!-- insert_top '[data-hook="homepage_products"]' -->
-<% if @slider_products %>
+<% if @products %>
   <div id="home-slider">
     <ul>
-      <% @slider_products.each do |product| %>
+      <% @products.each do |product| %>
         <li>
           <div class="product-image">
             <%= link_to product_image(product), product %>
