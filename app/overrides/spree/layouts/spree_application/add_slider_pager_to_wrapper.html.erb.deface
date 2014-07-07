@@ -1,5 +1,4 @@
 <!-- insert_top '[data-hook="homepage_products"]' -->
-<% if defined? @products %>
   <div id="home-slider">
     <ul>
       <% @products.each do |product| %>
@@ -29,4 +28,3 @@
       <% end %>
     </ul>
   </div>
-<% end %>
