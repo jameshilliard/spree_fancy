@@ -1,7 +1,7 @@
 <% if @slider_products %>
   <div id="home-slider">
     <ul>
-      <% @slider_products.uniq.each do |product| %>
+      <% @slider_products.select("DISTINCT (spree_products.id), spree_products.*, spree_products_taxons.position").each do |product| %>
         <li>
           <div class="product-image">
             <%= link_to product_image(product), product %>
